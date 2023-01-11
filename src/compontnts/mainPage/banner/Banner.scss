@@ -1,0 +1,71 @@
+
+
+.Grade__plate {
+    gap: 13px;
+    margin-bottom: 15px;
+}
+
+.Grade-plate__tile {
+    display: inline-block;
+    padding: 8px 30px;
+    background: linear-gradient(26.5deg, #4271DF 16.72%, #789CF1 95.45%);
+    border-radius: 15px;
+
+}
+
+.Grade-tile__title {
+    font-family: 'Gotham Pro';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 118.2%;
+    color: #FFFFFF;
+    margin: auto 0;
+}
+
+.Grade-plate__tile:hover {
+    background: linear-gradient(272.77deg, #864FF1 0%, #49B3F7 100%);
+    transform: scaleY(1.1);
+    filter: drop-shadow(0px 6px 21px rgba(104, 130, 245, 0.67));
+    transition: all 0.3s ease-in-out;
+}
+
+.Grade-plate__tile:hover:hover .Grade-tile__title { transform: scaleY(.9); }
+
+
+.Banner__wrapper {
+    flex-grow: 0;
+    flex-shrink: 0;
+    flex-basis: 55%;
+}
+
+.Banner__title {
+    margin-bottom: 40px;
+    font-family: 'ALSSchlangesans-Bold';
+    font-size: 84px;
+    line-height: 103.2%;
+    color: #243976;
+}
+
+.Banner__title--blue {
+    color: #49B3F7
+}
+
+.Banner__descr, 
+.Banner__descr--bold{
+    margin-bottom: 37px;
+    width: 85%;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 165.2%;
+    color: #243976;
+}
+
+.Banner__descr--bold {
+    font-weight: 700;
+}
+
+.Banner__icon {
+    transform: translateX(-100px);
+    height: 100%;
+}

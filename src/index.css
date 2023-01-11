@@ -6,3 +6,5 @@
 @import url(./compontnts//header/Header.scss);
 /* commons */
 @import url(./commons.scss);
+
+@import url(./compontnts/mainPage/banner/Banner.scss);

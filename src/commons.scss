@@ -1,3 +1,38 @@
+@font-face {
+    font-family: 'ALSSchlangesans-Bold';
+    src: url(../public/fonts/ALSSchlangesans-Bold.woff);
+}
+
+@font-face {
+    font-family: 'Gotham Pro';
+    src: url(../public/fonts/GothamPro-Medium.woff);
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Gotham Pro';
+    src: url(../public/fonts/GothamPro-Bold.woff);
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Gotham Pro';
+    src: url(../public/fonts/GothamPro-Light.woff);
+    font-weight: 400;
+}
+
+.bg-gradient {
+    background: linear-gradient(180deg, #FFFFFF 0%, #EEF1FD 100%);
+}
+
+body {
+        font-family: 'Gotham Pro';
+}
+
+button {
+        font-family: 'Gotham Pro';
+}
+
 .container {
     margin: 0px 160px;
 }
