@@ -1,7 +1,7 @@
 
 function Button(props) {
     return (
-        <button className={`pruple-button ${props.class}`}>{props.title}</button>
+        <button className={`purple-button ${props.class}`}>{props.title}</button>
     );
   }
   

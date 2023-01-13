@@ -1,0 +1,33 @@
+.likes {
+    padding: 60px 0;
+}
+
+.likes-plate__list {
+    padding: 13px 20px;
+    background: #FFFFFF;
+    box-shadow: 5px 15px 40px rgba(30, 35, 66, 0.15);
+    border-radius: 25px;
+}
+
+.likes-item__title {
+    margin-bottom: 10px;
+}
+
+.likes-item__descr {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 130%;
+    color: #243976;
+    margin-bottom: 10px;
+}
+
+.likes__plate {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+}
+
+.likes-plate__list {
+    align-items: center;
+    gap: 15px;
+}

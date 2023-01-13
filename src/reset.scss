@@ -18,7 +18,8 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-/* HTML5 display-role reset for older browsers */
+
+
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
@@ -27,6 +28,7 @@ footer, header, hgroup, menu, nav, section {
 ol, ul {
 	list-style: none;
 }
+
 blockquote, q {
 	quotes: none;
 }
@@ -43,6 +45,14 @@ table {
 button {
     cursor: pointer;
     outline: none;
+	font-family: inherit;
+	outline: none;
+}
+
+button,
+button:active,
+button:focus  {
+  border:none;
 }
 
 *{
@@ -50,6 +60,10 @@ button {
 }
 
 img {
-	width: 100%;
+	max-width: 100%;
 	height: auto;
+  }
+
+  html {
+	scroll-behavior: smooth;
   }

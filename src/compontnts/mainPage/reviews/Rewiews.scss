@@ -1,0 +1,53 @@
+.rewiews__plate {
+    transform: translateX(-50px);
+}
+
+.rewiews__wrapper {
+    margin: 0 auto;
+    position: relative;
+    width: 600px;
+    padding: 31px 45px;
+    background: #FFFFFF;
+    border: 5px solid #4C75A3;
+    box-shadow: 14px 22px 40px rgba(30, 35, 66, 0.28);
+    border-radius: 20px;
+}
+
+.rewiews__tile {
+    gap: 44px;
+    transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
+}
+
+.rewiews__tile.fading {
+    opacity: 0;
+    transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
+    transform: scale(0.9);
+}
+
+.rewiew-tile__bg {
+    width: 200px;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.rewiews-tile__descr {
+    position: relative;
+    z-index: 3;
+}
+
+.rewiews__nav {
+    display: flex;
+    justify-content: center;
+}
+
+.rewiews-nav__arrow {
+    cursor: pointer;
+}
+
+.rewiews-nav__arrow--right {
+    transform: rotate(180deg);
+}
+
+

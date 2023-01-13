@@ -1,4 +1,6 @@
-
+:root {--gradient-left: #4271DF;
+--gradient-right: #789CF1;
+}
 
 .Grade__plate {
     gap: 13px;
@@ -8,7 +10,8 @@
 .Grade-plate__tile {
     display: inline-block;
     padding: 8px 30px;
-    background: linear-gradient(26.5deg, #4271DF 16.72%, #789CF1 95.45%);
+    background: linear-gradient(26.5deg, var(--gradient-left), var(--gradient-right));
+    transition: all 0.3s ease-in-out;
     border-radius: 15px;
 
 }
@@ -24,14 +27,22 @@
 }
 
 .Grade-plate__tile:hover {
-    background: linear-gradient(272.77deg, #864FF1 0%, #49B3F7 100%);
+  
+    background-position: top;  
     transform: scaleY(1.1);
     filter: drop-shadow(0px 6px 21px rgba(104, 130, 245, 0.67));
+
     transition: all 0.3s ease-in-out;
+
+    --gradient-left: #864FF1;
+    --gradient-right: #49B3F7;
 }
 
 .Grade-plate__tile:hover:hover .Grade-tile__title { transform: scaleY(.9); }
 
+.Banner {
+    padding-bottom: 50px;
+}
 
 .Banner__wrapper {
     flex-grow: 0;
@@ -51,10 +62,14 @@
     color: #49B3F7
 }
 
+.Banner__descr {
+    width: 85%;
+}
+
 .Banner__descr, 
 .Banner__descr--bold{
     margin-bottom: 37px;
-    width: 85%;
+   
     font-weight: 400;
     font-size: 17px;
     line-height: 165.2%;
@@ -62,10 +77,19 @@
 }
 
 .Banner__descr--bold {
+    display: inline-block;
     font-weight: 700;
+    position: relative;
+}
+
+.Banner__descr--bold::after {
+content: url(../../../../public/banner/right-arrow\ 1.svg);
+position: absolute;
+right: 65px;
+top: 20px;
 }
 
 .Banner__icon {
     transform: translateX(-100px);
-    height: 100%;
+ 
 }

@@ -1,0 +1,28 @@
+.promo {
+    position: relative;
+    align-items: center;
+    padding: 23px 47px;
+    background: #EFF2FD;
+    border-radius: 25px;
+}
+
+.promo__img--transparent {
+    width: calc(130px + 69px);
+    min-width: calc(130px + 19px);
+}
+
+.promo__img {
+    position: absolute;
+    bottom: 0px;
+    max-width: 130px;
+    transition: 1s ease-in-out all;
+}
+
+.promo__title {
+    margin-bottom: 5px;
+}
+
+.promo__descr {
+    font-size: 16px;
+line-height: 130%;
+}

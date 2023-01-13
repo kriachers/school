@@ -1,3 +1,9 @@
+
+
+:root {--button-gradient-left: #864FF1;
+    --button-gradient-right: #49B3F7;
+}
+
 @font-face {
     font-family: 'ALSSchlangesans-Bold';
     src: url(../public/fonts/ALSSchlangesans-Bold.woff);
@@ -21,8 +27,14 @@
     font-weight: 400;
 }
 
+$dark-blue: #243976;
+
 .bg-gradient {
     background: linear-gradient(180deg, #FFFFFF 0%, #EEF1FD 100%);
+}
+
+.bg-blue {
+    background: #EFF2FD;
 }
 
 body {
@@ -33,13 +45,54 @@ button {
         font-family: 'Gotham Pro';
 }
 
-.container {
-    margin: 0px 160px;
+p, h1, h2, h3 {
+    color: #243976;
 }
 
-.pruple-button {
+h2 {
+    margin-bottom: 55px;
+font-family: 'ALSSchlangesans-Bold';
+font-size: 50px;
+line-height: 103.2%;
+text-align: center;
+}
+
+h3 {
+
+font-family: 'ALSSchlangesans-Bold';
+font-size: 32px;
+line-height: 103.2%;
+color: #243976;
+}
+
+h4 {
+font-weight: 500;
+font-size: 20px;
+line-height: 103%;
+color: #243976;
+}
+
+
+
+.container {
+    margin: 0px 160px;
+    max-width: 1350px;
+}
+
+@media (max-width: 1000px) {
+    .container {
+        margin: 0px 50px;
+    }
+}
+
+.container-bottom {
+    margin-bottom: 80px;
+}
+
+.purple-button {
+    display: block;
     padding: 23px 31px;
-    background: linear-gradient(272.77deg, #864FF1 0%, #49B3F7 100%);
+    background: linear-gradient(272.77deg, var(--button-gradient-left), var(--button-gradient-right));
     box-shadow: 0px 6px 21px rgba(104, 130, 245, 0.67);
     border-radius: 90px;
 
@@ -49,5 +102,16 @@ button {
     letter-spacing: 0.125em;
     text-transform: uppercase;
     color: #FFFFFF;
+    transition: all 0.3s ease-in-out;
+}
 
+.button-long {
+    padding: 27px 44px;
+}
+
+.purple-button:hover {
+    transition: all 1s ease-in-out;
+    --button-gradient-left: #49B3F7;
+    --button-gradient-right: #864FF1;
+   
 }
