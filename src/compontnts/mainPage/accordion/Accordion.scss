@@ -1,0 +1,107 @@
+.accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.accordion__item {
+    padding: 44px 58px;
+    background: #EFF2FD;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: border-left 0.3s ease-in-out;
+}
+
+.accordion__item.open {
+padding-right: 33px;
+border-left: 25px #243976 solid;
+transition: border-left 0.3s ease-in-out;
+}
+
+.accordion-item__descr {
+    margin-top: 20px;
+}
+
+.accordion-item__close {
+    position: relative;
+    width: 40px;
+    height: 40px;
+    min-width: 40px;
+    min-height: 40px;
+    background: linear-gradient(26.5deg, #4271DF 16.72%, #789CF1 95.45%);
+    border-radius: 50%;
+}
+
+.accordion-close__line {
+    position: absolute;
+    display:block;
+    height: 2px;
+    width: 60%;
+    background-color: #fff;
+    top: 50%;
+    left: 50%;
+}
+
+.accordion-close__line:nth-of-type(1n) {
+    transform: translate(-50%, -50%) rotate(45deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+.accordion-close__line:nth-of-type(2n) {
+    transform: translate(-50%, -50%) rotate(-45deg);
+    
+}
+
+.accordion-item__close.open .accordion-close__line:nth-of-type(1n),
+.accordion-item__close.open .accordion-close__line:nth-of-type(2n) {
+    transform: translate(-50%, -50%) rotate(180deg);
+    transition: transform 0.3s ease-in-out;
+}
+
+.accordion-item__close.open .accordion-close__line:nth-of-type(2n) {
+    transform: translate(-50%, -50%) rotate(0);
+    transition: transform 0.3s ease-in-out;
+}
+
+
+@media (max-width: 1000px) {
+    .accordion__item {
+        padding: 22px 20px 22px 55px;
+    }
+
+    .accordion__item.open {
+        padding-left: 30px;
+        border-left: 25px #243976 solid;
+        }
+}
+
+@media (max-width: 768px) {
+    .accordion__item {
+        padding: 34px 20px 34px 55px;
+    }
+}
+
+@media (max-width: 480px) {
+    .accordion__item {
+        padding: 22px 15px 22px 35px;
+    }
+
+    .accordion__item.open {
+        padding-left: 15px;
+        border-left: 20px #243976 solid;
+        }
+
+}
+
+
+
+@media (max-width: 415px) {
+    .accordion-item__close {
+        width: 32px;
+        height: 32px;
+        min-width: 32px;
+        min-height: 32px;
+    }
+
+}
+

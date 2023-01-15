@@ -45,7 +45,7 @@ function Audience() {
     return (
         <div className="container audience">
         <h2 ref={ref} className={`audience__title ${active ? 'audience__title--active' : ''}`}>Кому подходит онлайн образование?</h2>
-        <div className="audience__plate flex">
+        <div className="audience__plate">
         {
             audienceData.map((item, index) => {
                 const itemDelay = (index + 1) * 500;

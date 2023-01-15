@@ -42,12 +42,13 @@
 
 .Banner {
     padding-bottom: 50px;
+    align-items: center;
 }
 
 .Banner__wrapper {
     flex-grow: 0;
     flex-shrink: 0;
-    flex-basis: 55%;
+    flex-basis: 60%;
 }
 
 .Banner__title {
@@ -90,6 +91,17 @@ top: 20px;
 }
 
 .Banner__icon {
-    transform: translateX(-100px);
+    transform: scale(1.2) translateX(-50px);
  
+}
+
+@media (max-width: 800px) {
+    .Banner {
+        flex-direction: column-reverse;
+    }
+
+    .Banner__icon {
+        transform: translateX(0);
+     
+    }
 }

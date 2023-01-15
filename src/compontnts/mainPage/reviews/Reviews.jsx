@@ -9,7 +9,7 @@ const rewiewsData = [
     {
         author: 'Маша Петрова',
         parentOf: 'родитель Оли',
-        descr: 'Банальные, но неопровержимые выводы, а также непосредственные участники технического прогресса набирают популярность среди определенных слоев населения, а значит, должны быть ассоциативно распределены по отраслям. Имеется спорная точка зрения, гласящая примерно следующее: диаграммы.'
+        descr: 'Прекрасное обучение, отличная образовательная программа. Ребенок прекрасно усваивает знания.'
     },
     {
         author: 'Маша Иванова',
@@ -58,17 +58,23 @@ function Rewiews() {
     return ( 
         <div className="container">
             <h2 className="rewiews__title">Отзывы родителей о "Школе Будущего Online"</h2>
+
             <div className="rewiews__wrapper">
-            <img className="rewiew-tile__bg" src="./rewiews/message.svg" alt="" />
-                        <div className={`rewiews__tile flex ${fading ? 'fading' : ''}`}>
-                            
-                            <div className="rewiews-tile__wrapper">
-                                <h4 className="rewiews-tile-wrapper__author">{rewiewsData[currentSlide].author}</h4>
-                                <h4 className="rewiews-tile-wrapper__parentOf">{rewiewsData[currentSlide].parentOf}</h4>
-                            </div>
-                            <p className="rewiews-tile__descr">{rewiewsData[currentSlide].descr}</p>
+                <div className="rewiews-wrapper__spot" >
+                <img src="./rewiews/spot.svg" alt="" className="rewiews-spot__img" />
+                </div>
+                <div className="rewiews__tile">
+                        <img className="rewiew-tile__bg" src="./rewiews/message.svg" alt="" />
+                        <div className={`rewiews-tile__content flex ${fading ? 'fading' : ''}`}>
+                                
+                                <div className="rewiews-tile__wrapper">
+                                    <h4 className="rewiews-tile-wrapper__author">{rewiewsData[currentSlide].author}</h4>
+                                    <h4 className="rewiews-tile-wrapper__parentOf">{rewiewsData[currentSlide].parentOf}</h4>
+                                </div>
+                                <p className="rewiews-tile__descr">{rewiewsData[currentSlide].descr}</p>
                         </div>
-                    </div>
+                </div>
+            </div>
 
             <div className="rewiews__nav">
                 <img onClick={goSliderLeft} className="rewiews-nav__arrow rewiews-nav__arrow--left" src="./rewiews/left.svg" alt="" />

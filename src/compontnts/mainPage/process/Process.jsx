@@ -27,7 +27,7 @@ function Process(props) {
         <div className="container container-bottom">
             <h2 className="process__title">Как проходят уроки в нашей онлайн школе?</h2>
 
-            <div className="process__plate flex">
+            <div className="process__plate">
             <img className="process__bg" src="./prosess/lines.svg" alt="" />
             {
             processData.map((item) => {
