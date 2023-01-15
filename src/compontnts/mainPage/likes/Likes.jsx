@@ -1,3 +1,5 @@
+import SubTile from '../../ux/SubTile'
+
 const likesData = [
 {
     title: 'Продвинутая геймификация',
@@ -19,7 +21,7 @@ function Likes(props) {
     return (
         <div className="bg-blue">
             <div className="likes container container-bottom">
-                <h2>Дети любят наши уроки потому что:</h2>
+                <SubTile title={'Дети любят наши уроки потому что:'}></SubTile>
 
                 <div className="likes___wrapper flex">
                     <ul className="likes__plate">

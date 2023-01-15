@@ -1,3 +1,4 @@
+import SubTile from '../../ux/SubTile';
 import { useState } from "react";
 
 const rewiewsData = [
@@ -56,7 +57,7 @@ function Rewiews() {
 
     return ( 
         <div className="container container-bottom">
-            <h2 className="rewiews__title">Отзывы родителей о "Школе Будущего Online"</h2>
+            <SubTile title={`Отзывы родителей о "Школе Будущего Online"`} class={'rewiews__title'}></SubTile>
 
             <div className="rewiews__wrapper">
                 <div className="rewiews-wrapper__spot" >

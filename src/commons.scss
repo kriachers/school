@@ -81,6 +81,18 @@ line-height: 103%;
 color: #243976;
 }
 
+.sub-title {
+    transform: translateX(-100%);
+    opacity: 0;
+    transition: 1s ease-in-out all;
+}
+
+.sub-title--active {
+    transform: translateX(0);
+    opacity: 1;
+    transition: 1s ease-in-out all;
+}
+
 
 
 .container {

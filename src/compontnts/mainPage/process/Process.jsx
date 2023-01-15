@@ -1,3 +1,5 @@
+import SubTile from '../../ux/SubTile'
+
 const processData = [
     {
         title: 'Живые уроки с учителем',
@@ -25,8 +27,7 @@ function Process(props) {
 
     return (
         <div className="container container-bottom">
-            <h2 className="process__title">Как проходят уроки в нашей онлайн школе?</h2>
-
+            <SubTile title={'Как проходят уроки в нашей онлайн школе?'}></SubTile>
             <div className="process__plate">
             <img className="process__bg" src="./prosess/lines.svg" alt="" />
             {

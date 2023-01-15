@@ -1,6 +1,5 @@
 import Button from '../../ux/Button';
-import {useInView} from 'react-intersection-observer';
-import { useEffect, useState } from 'react';
+
 
 function Promo(props) {
 
