@@ -12,6 +12,8 @@
     transition: background-color 0.3s ease-in-out;
 }
 
+
+
 .header__wrapper {
     align-items: center;
     gap: 29px;
@@ -28,8 +30,8 @@
 .header__burger-button {
     display: none;
     position: relative;
-    width: 43px;
-    height: 43px;
+    min-width: 43px;
+    min-height: 43px;
     background: linear-gradient(272.77deg, #864FF1 0%, #49B3F7 100%);
     box-shadow: 0px 6px 21px rgba(104, 130, 245, 0.67);
     border-radius: 90px;
@@ -72,6 +74,12 @@
 .header__burger-button.open  .header-burger-button__line:nth-of-type(2n) {
     opacity: 0;
     visibility: hidden;
+}
+
+@media(max-width: 1000px) {
+    .header__logo {
+        width: 170px
+    }
 }
 
 @media (max-width: 700px) {
@@ -132,5 +140,7 @@
     color: #243976;
 
     }
+
+
 
 }

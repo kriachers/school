@@ -31,7 +31,7 @@
 
 .rewiews-tile__content {
     gap: 40px;
-    height: 190px;
+    min-height: 190px;
     align-items: center;
     transition: opacity 300ms ease-in-out, transform 300ms ease-in-out;
 }
@@ -85,17 +85,20 @@
         gap: 20px
     }
 
-    .rewiews-tile__wrapper {
-        position: relative;
-    }
-
     .rewiews__wrapper {
         margin: 50px 0;
-        position: relative;
+       
     }
 
-    .rewiews-spot__img {
+    .rewiews-spot__img,
+    .rewiew-tile__bg {
     display: none;
     }
+
+
+
+}
+
+@media (max-width: 500px) {
 
 }
