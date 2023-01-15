@@ -48,9 +48,8 @@ function Audience() {
         <div className="audience__plate">
         {
             audienceData.map((item, index) => {
-                const itemDelay = (index + 1) * 500;
                 return (
-                    <AudiencePlate itemDelay={itemDelay} img={item.img} title={item.title} ></AudiencePlate>
+                    <AudiencePlate  img={item.img} title={item.title} ></AudiencePlate>
                    )
             })
         }

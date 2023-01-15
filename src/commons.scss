@@ -167,6 +167,10 @@ color: #243976;
         margin-left: 40px;
         margin-right: 40px;
     }
+
+    .container-inner {
+        padding: 0px 40px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -192,6 +196,10 @@ color: #243976;
 
         .container-bottom {
             margin-bottom: 70px;
+        }
+
+        .container-inner {
+            padding: 0px 20px;
         }
 }
 

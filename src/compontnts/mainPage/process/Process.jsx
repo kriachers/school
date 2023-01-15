@@ -2,22 +2,22 @@ const processData = [
     {
         title: 'Живые уроки с учителем',
         descr: 'Увлекательные уроки с учителем, на которых каждому ребенку будет уделено внимание',
-        img: './prosess/teacher.png'
+        img: './prosess/teacher.svg'
     },
     {
         title: 'Дополнительные материалы',
         descr: 'Материалы по каждой теме без лишней воды помогут закрепить знания',
-        img: './prosess/matherials.png'
+        img: './prosess/matherials.svg'
     },
     {
         title: 'Домашнее задание',
         descr: 'Для закрепления всего ранее полученного материала дети получают домашнее задание',
-        img: './prosess/homework.png'
+        img: './prosess/homework.svg'
     },
     {
         title: 'Проверка и оценка',
         descr: 'Все домашние задания проверяются учителем и выставляется оценка в дневник',
-        img: './prosess/marks.png'
+        img: './prosess/marks.svg'
     },
 ]
 
