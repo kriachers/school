@@ -57,11 +57,14 @@
 
 .rewiews__nav {
     display: flex;
+    gap: 30px;
     justify-content: center;
 }
 
 .rewiews-nav__arrow {
     cursor: pointer;
+    -webkit-filter: drop-shadow( 30px 0px 10px rgba(0, 0, 0, 0.1));
+    filter: drop-shadow( 0px 0px 10px rgba(0, 0, 0, 0.1));
 }
 
 .rewiews-nav__arrow--right {
@@ -94,7 +97,6 @@
     .rewiew-tile__bg {
     display: none;
     }
-
 
 
 }

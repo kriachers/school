@@ -23,7 +23,6 @@ function Rewiews() {
 
     const [currentSlide, setCurrentSlide] = useState(0)
     const [fading, setFading] = useState(false)
-    // const [emersion, setEmersion] = useState(false)
 
     function goSliderRight () {
         setFading(true)
