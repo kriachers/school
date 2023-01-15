@@ -49,16 +49,25 @@ p, h1, h2, h3 {
     color: #243976;
 }
 
+h1 {
+    margin-bottom: 40px;
+    font-family: 'ALSSchlangesans-Bold';
+    font-size: 84px;
+    line-height: 103.2%;
+    color: #243976;
+}
+
+
 h2 {
-    margin-bottom: 55px;
+margin-bottom: 55px;
 font-family: 'ALSSchlangesans-Bold';
 font-size: 50px;
 line-height: 103.2%;
 text-align: center;
 }
 
-h3 {
 
+h3 {
 font-family: 'ALSSchlangesans-Bold';
 font-size: 32px;
 line-height: 103.2%;
@@ -81,12 +90,24 @@ color: #243976;
 
 @media (max-width: 1100px) {
     .container {
-        margin: 0px 50px;
+        margin-left: 50px;
+        margin-right: 50px;
     }
 }
 
 .container-bottom {
     margin-bottom: 80px;
+}
+
+.container-inner {
+    padding: 0px 160px;
+    max-width: 1350px;
+}
+
+@media (max-width: 1100px) {
+    .container-inner {
+        padding: 0px 50px;
+    }
 }
 
 .purple-button {
@@ -114,4 +135,87 @@ color: #243976;
     --button-gradient-left: #49B3F7;
     --button-gradient-right: #864FF1;
    
+}
+
+
+@media (max-width: 1000px) {
+
+    h1 {
+        font-size: 78px;
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 60px;
+    }
+
+    h2 {
+        font-size: 38px;
+        margin-bottom: 40px;
+    }
+
+    h3 {
+    font-size: 26px;
+    }
+
+    .container {
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+
+    h2 {
+        font-size: 34px;
+        margin-bottom: 30px;
+    }
+
+
+    h3 {
+        font-size: 24px;
+        }
+
+        .container {
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        .container-bottom {
+            margin-bottom: 70px;
+        }
+}
+
+@media (max-width: 480px) { 
+    .container-bottom {
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 320px) {    h1 {
+    font-size: 34px;
+}
+
+
+    h2 {
+        font-size: 28px;
+    }
+
+
+    h3 {
+        font-size: 20px;
+        }
+
+        .container-bottom {
+            margin-bottom: 40px;
+        }
 }

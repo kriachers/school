@@ -13,7 +13,7 @@ function HeaderBar() {
         {
             menuData.map((item) => {
                 return (
-                    <li><a href=""></a>{item.title}</li>
+                    <li className="headerBar__item"><a href=""></a>{item.title}</li>
                 )
             })
         }

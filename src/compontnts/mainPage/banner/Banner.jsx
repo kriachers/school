@@ -3,17 +3,6 @@ import Button from '../../ux/Button'
 function Banner() {
     return (
     <>
-        <div className="container Grade__plate flex">
-            <div className='Grade-plate__tile'>
-                <p className='Grade-tile__title'>1-4 классы</p>
-            </div>
-            <div className='Grade-plate__tile'>
-                <p className='Grade-tile__title'>1-4 классы</p>
-            </div>
-            <div className='Grade-plate__tile'>
-                <p className='Grade-tile__title'>1-4 классы</p>
-             </div>
-        </div>
 
     <div className="container container-bottom Banner flex">
         <div className="Banner__wrapper">

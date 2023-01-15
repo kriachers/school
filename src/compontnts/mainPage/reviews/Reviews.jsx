@@ -56,7 +56,7 @@ function Rewiews() {
     
 
     return ( 
-        <div className="container">
+        <div className="container container-bottom">
             <h2 className="rewiews__title">Отзывы родителей о "Школе Будущего Online"</h2>
 
             <div className="rewiews__wrapper">

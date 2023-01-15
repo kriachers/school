@@ -4,11 +4,21 @@
 
 .likes-plate__list {
     padding: 13px 20px;
-    background: #FFFFFF;
-    box-shadow: 5px 15px 40px rgba(30, 35, 66, 0.15);
     border-radius: 25px;
+    align-items: center;
+    gap: 15px;
 }
 
+.liked-plate__list:hover {
+    background: #FFFFFF;
+    box-shadow: 5px 15px 40px rgba(30, 35, 66, 0.15);
+}
+
+.liked-plate__list:hover .likes-item__title  {
+    color: linear-gradient(272.77deg, #864FF1 0%, #49B3F7 100%);
+}
+
+ 
 .likes-item__title {
     margin-bottom: 10px;
 }
@@ -28,10 +38,6 @@
     flex-basis: 60%;
 }
 
-.likes-plate__list {
-    align-items: center;
-    gap: 15px;
-}
 
 @media (max-width: 800px) {
     .likes___wrapper {
