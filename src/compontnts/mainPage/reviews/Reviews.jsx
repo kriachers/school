@@ -56,7 +56,7 @@ function Rewiews() {
     
 
     return ( 
-        <div className="container container-bottom">
+        <div id='Reviews' className="container container-bottom">
             <SubTile title={`Отзывы родителей о "Школе Будущего Online"`} class={'rewiews__title'}></SubTile>
 
             <div className="rewiews__wrapper">

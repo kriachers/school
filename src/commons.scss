@@ -45,6 +45,26 @@ button {
         font-family: 'Gotham Pro';
 }
 
+.back-to-top-button {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    right: 25px;
+    bottom: 25px;
+    background: linear-gradient(272.77deg, #864FF1 0%, #49B3F7 100%);
+    box-shadow: 0px 6px 21px rgba(104, 130, 245, 0.67);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+.back-to-top-button__icon {
+    width: 70%;
+    transform: rotate(-90deg);
+}
+
 p, h1, h2, h3 {
     color: #243976;
 }
@@ -113,7 +133,7 @@ color: #243976;
 
 .container-inner {
     padding: 0px 160px;
-    max-width: 1350px;
+    max-width: calc(1350px - (160px * 2px));
 }
 
 @media (max-width: 1100px) {

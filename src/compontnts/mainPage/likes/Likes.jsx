@@ -19,7 +19,7 @@ const likesData = [
 
 function Likes(props) {
     return (
-        <div className="bg-blue">
+        <div id='Likes' className="bg-blue">
             <div className="likes container container-bottom">
                 <SubTile title={'Дети любят наши уроки потому что:'}></SubTile>
 

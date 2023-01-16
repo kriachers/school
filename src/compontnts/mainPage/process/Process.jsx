@@ -26,7 +26,7 @@ const processData = [
 function Process(props) { 
 
     return (
-        <div className="container container-bottom">
+        <div id="Process" className="container container-bottom">
             <SubTile title={'Как проходят уроки в нашей онлайн школе?'}></SubTile>
             <div className="process__plate">
             <img className="process__bg" src="./prosess/lines.svg" alt="" />

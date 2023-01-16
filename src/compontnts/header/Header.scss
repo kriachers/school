@@ -27,6 +27,13 @@
     padding: 15px 0;
 }
 
+.headerBar__link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 118.2%;
+    color: #243976;
+} 
+
 .header__burger-button {
     display: none;
     position: relative;
@@ -86,6 +93,7 @@
 
     .header__burger-button {
         display: block;
+        cursor: pointer;
     }
 
     .header-wrapper__phone {
@@ -102,7 +110,6 @@
         pointer-events: none;
         top: -100%;
         z-index: 0;
-
         position: absolute;
         width: 100vw;
         background: #EFF2FD;
@@ -131,16 +138,7 @@
     }
 
     .headerBar__item {
-        font-weight: 500;
-    font-size: 14px;
-    line-height: 118.2%;
-
-    text-align: center;
-
-    color: #243976;
-
+        text-align: center;
     }
-
-
 
 }

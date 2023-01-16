@@ -43,7 +43,7 @@ function Audience() {
 
 
     return (
-        <div className="container audience">
+        <div id='Audience' className="container audience">
         <h2 ref={ref} className={`audience__title ${active ? 'audience__title--active' : ''}`}>Кому подходит онлайн образование?</h2>
         <div className="audience__plate">
         {

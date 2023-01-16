@@ -1,4 +1,6 @@
-import logo from './logo.svg';
+
+import { useEffect, useState } from "react";
+
 import './App.css';
 import Header from './compontnts/header/Header'
 import Banner from './compontnts/mainPage/banner/Banner'
@@ -8,8 +10,23 @@ import Process from './compontnts/mainPage/process/Process'
 import Likes from './compontnts/mainPage/likes/Likes'
 import Rewiews from './compontnts/mainPage/reviews/Reviews'
 import Accordion from './compontnts/mainPage/accordion/Accordion'
+import BackToTopButton from './compontnts/ux/BackToTopButton'
 
 function App() {
+
+  const [backToTopButton, setBackToTopButton] = useState(false);
+
+  useEffect(() => {
+    window.addEventListener('scroll', () => {
+        if (window.scrollY > 100) {
+            setBackToTopButton(true)
+        } else {
+            setBackToTopButton(false)
+        }
+    })
+}, [])
+
+
   return (
     <div className="App">
 
@@ -23,6 +40,7 @@ function App() {
      <Likes></Likes>
      <Rewiews></Rewiews>
      <Accordion></Accordion>
+     {backToTopButton ? <BackToTopButton/> : '' }
     
     </div>
   );

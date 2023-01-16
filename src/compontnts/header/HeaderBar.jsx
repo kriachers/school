@@ -1,9 +1,8 @@
 const menuData = [
-    {title: 'Для кого', location: ''},
-    {title: 'Как проходят уроки', location: ''},
-    {title: 'Преимущества', location: ''},
-    {title: 'Цены', location: ''},
-    {title: 'Контакты', location: ''},
+    {title: 'Для кого', place: '#Audience'},
+    {title: 'Как проходят уроки', place: '#Process'},
+    {title: 'Преимущества', place: '#Likes'},
+    {title: 'Отзывы', place: '#Reviews'},
 ]
 
 function HeaderBar() {
@@ -13,7 +12,7 @@ function HeaderBar() {
         {
             menuData.map((item) => {
                 return (
-                    <li className="headerBar__item"><a href=""></a>{item.title}</li>
+                    <li className="headerBar__item"><a className="headerBar__link" href={`${item.place}`}>{item.title}</a></li>
                 )
             })
         }
