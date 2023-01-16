@@ -11,6 +11,7 @@ import Likes from './compontnts/mainPage/likes/Likes'
 import Rewiews from './compontnts/mainPage/reviews/Reviews'
 import Accordion from './compontnts/mainPage/accordion/Accordion'
 import BackToTopButton from './compontnts/ux/BackToTopButton'
+import Footer from "./compontnts/footer/Footer";
 
 function App() {
 
@@ -40,6 +41,7 @@ function App() {
      <Likes></Likes>
      <Rewiews></Rewiews>
      <Accordion></Accordion>
+     <Footer></Footer>
      {backToTopButton ? <BackToTopButton/> : '' }
     
     </div>
