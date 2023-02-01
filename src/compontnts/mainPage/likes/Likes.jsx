@@ -19,8 +19,9 @@ const likesData = [
 
 function Likes(props) {
     return (
-        <div id='Likes' className="bg-blue">
-            <div className="likes container container-bottom">
+        <div className="background bg-blue">
+        <div id='Likes' className="container">
+            <section className="likes section container-bottom">
                 <SubTile title={'Дети любят наши уроки потому что:'}></SubTile>
 
                 <div className="likes___wrapper flex">
@@ -44,7 +45,8 @@ function Likes(props) {
                     </div>
                 </div>
 
-            </div>
+            </section>
+        </div>
         </div>
     );
   }

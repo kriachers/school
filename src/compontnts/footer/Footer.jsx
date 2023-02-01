@@ -1,7 +1,8 @@
 function Footer() {
     return ( 
         <div className="bg-blue ">
-        <footer className="footer container">
+        <div className="container">
+        <footer className="footer section">
             <div className="footer__info">
                 <img src="./logo.svg" alt="" className="footer-info__logo" />
             </div>
@@ -26,6 +27,7 @@ function Footer() {
                 </div>
                
         </footer>
+        </div>
         </div>
     );
 }

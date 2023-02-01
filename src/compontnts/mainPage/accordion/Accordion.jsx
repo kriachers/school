@@ -124,7 +124,8 @@ function Accordion () {
 
 
     return (
-       <div className="container accordion container-bottom">
+        <div className="container">
+       <section className="section accordion container-bottom">
         {
             open.map((item, index) => {
                 return (
@@ -132,6 +133,7 @@ function Accordion () {
                 )
             })
         }
+       </section>
        </div>
     );
   }

@@ -30,7 +30,7 @@
 .Grade-plate__tile:hover {
   
     background-position: top;  
-    transform: scaleY(1.1);
+
     filter: drop-shadow(0px 6px 21px rgba(104, 130, 245, 0.67));
 
     transition: all 0.3s ease-in-out;
@@ -39,7 +39,6 @@
     --gradient-right: #49B3F7;
 }
 
-.Grade-plate__tile:hover:hover .Grade-tile__title { transform: scaleY(.9); }
 
 .Banner {
         margin-top: 47px;

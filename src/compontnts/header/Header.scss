@@ -4,10 +4,14 @@
     justify-content: space-between;
     align-items: center;
     border-bottom: solid 1px #E4E5EC;
+    
+}
+
+.header-container{
     transition: background-color 0.3s ease-in-out;
 }
 
-.Header.open {
+.header-container.open {
     background-color: #EFF2FD;
     transition: background-color 0.3s ease-in-out;
 }
@@ -24,7 +28,8 @@
 }
 
 .headerBar {
-    padding: 15px 0;
+    padding-top: 15px;
+    padding-bottom: 15px;
 }
 
 .headerBar__link {
@@ -81,6 +86,13 @@
 .header__burger-button.open  .header-burger-button__line:nth-of-type(2n) {
     opacity: 0;
     visibility: hidden;
+}
+
+.header-wrapper__phone {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 118.2%;
+    color: #243976;
 }
 
 @media(max-width: 1000px) {

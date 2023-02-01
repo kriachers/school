@@ -7,17 +7,17 @@ const menuData = [
 
 function HeaderBar() {
   return (
-    <div className="headerBar container">
-        <ul className="headerBar__menu flex">
-        {
-            menuData.map((item) => {
-                return (
-                    <li className="headerBar__item"><a className="headerBar__link" href={`${item.place}`}>{item.title}</a></li>
-                )
-            })
-        }
-        </ul>
-    </div>
+        <div className="headerBar section">
+            <ul className="headerBar__menu flex">
+            {
+                menuData.map((item) => {
+                    return (
+                        <li className="headerBar__item"><a className="headerBar__link" href={`${item.place}`}>{item.title}</a></li>
+                    )
+                })
+            }
+            </ul>
+        </div>
   );
 }
 

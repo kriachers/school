@@ -26,7 +26,8 @@ const processData = [
 function Process(props) { 
 
     return (
-        <div id="Process" className="container container-bottom">
+        <div className="container">
+        <section id="Process" className="section container-bottom">
             <SubTile title={'Как проходят уроки в нашей онлайн школе?'}></SubTile>
             <div className="process__plate">
             <img className="process__bg" src="./prosess/lines.svg" alt="" />
@@ -44,6 +45,7 @@ function Process(props) {
             })
             }
             </div>
+        </section>
         </div>
 
     );

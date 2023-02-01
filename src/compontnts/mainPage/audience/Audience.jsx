@@ -43,17 +43,19 @@ function Audience() {
 
 
     return (
-        <div id='Audience' className="container audience">
-        <h2 ref={ref} className={`audience__title ${active ? 'audience__title--active' : ''}`}>Кому подходит онлайн образование?</h2>
-        <div className="audience__plate">
-        {
-            audienceData.map((item, index) => {
-                return (
-                    <AudiencePlate  img={item.img} title={item.title} ></AudiencePlate>
-                   )
-            })
-        }
-        </div>
+        <div className="container">
+            <section id='Audience' className="section audience">
+            <h2 ref={ref} className={`audience__title ${active ? 'audience__title--active' : ''}`}>Кому подходит онлайн образование?</h2>
+            <div className="audience__plate">
+            {
+                audienceData.map((item, index) => {
+                    return (
+                        <AudiencePlate  img={item.img} title={item.title} ></AudiencePlate>
+                    )
+                })
+            }
+            </div>
+            </section>
         </div>
     )
   }

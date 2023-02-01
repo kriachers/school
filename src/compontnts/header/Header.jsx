@@ -8,10 +8,11 @@ const [openMenu, setOpenMenu] = useState(false)
 
   return (
     <>
-    <header className={`Header flex container-inner ${openMenu ? 'open' : ''}`}>
+    <div className={`container header-container ${openMenu ? 'open' : ''}`}>
+    <header className={`Header flex section`}>
      <img className="header__logo" src='./logo.svg' alt="" />
         <div className="header__wrapper flex">
-            <p className="header-wrapper__phone">+7 (456) 567-67-67</p>
+            <a href="tel:+74565676767" className="header-wrapper__phone">8 (800) 300-37-91</a>
             <Button class={'header-wrapper__button'} title={'Записаться на урок'}></Button>
         </div>
         <div className={`header__burger-button ${openMenu ? 'open' : ''}`} onClick={() => setOpenMenu(!openMenu)}>
@@ -24,8 +25,8 @@ const [openMenu, setOpenMenu] = useState(false)
     <div className={`header-bar__wrapper ${openMenu ? 'open' : ''}`}>
       <HeaderBar></HeaderBar>
     </div>
-
-    <div className="container Grade__plate">
+ 
+    <div className="section Grade__plate">
             <div className='Grade-plate__tile'>
                 <p className='Grade-tile__title'>1-4 классы</p>
             </div>
@@ -36,6 +37,7 @@ const [openMenu, setOpenMenu] = useState(false)
                 <p className='Grade-tile__title'>1-4 классы</p>
              </div>
         </div>
+      </div>
     </>
   );
 }
